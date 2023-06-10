@@ -1,6 +1,6 @@
-﻿namespace DiscountSubSystem
+﻿namespace ERP
 {
-    public class Customer
+    public partial class Customer
     {
         public Customer(string name, string address)
         {

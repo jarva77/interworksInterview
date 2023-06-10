@@ -1,6 +1,8 @@
-﻿namespace DiscountSubSystem
+﻿using ERP;
+
+namespace DiscountSubSystem
 {
-    class PromotionDiscount : IDiscount
+    public class PromotionDiscount : IDiscount
     {
         public string Name { get => "Promotion"; }
         public int SortOrder { get => 20; }

@@ -1,5 +1,8 @@
 ﻿using DiscountSubSystem;
+using ERP;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo( "AssignmentTests")]
 namespace ERP
 {
 

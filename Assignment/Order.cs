@@ -1,4 +1,6 @@
-﻿namespace DiscountSubSystem
+﻿using DiscountSubSystem;
+
+namespace ERP
 {
     public partial class Order
     {
@@ -7,7 +9,5 @@
         public decimal CatalogPrice { get; set; }
         public decimal FinalPrice { get; set; }
         public IEnumerable<IDiscount>? ApplicableDiscounts { get;set; }
-        
     }
-
 }
