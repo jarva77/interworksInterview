@@ -28,6 +28,26 @@ namespace AssignmentTests
         }
 
         [Fact]
+        public void CalculateDiscountResults_NullOrder_Success()
+        {
+            Order order = null;           
+            var calculator = new OrderDiscountCalculator();
+            var discounts = new List<IDiscount> { new CatalogPriceDiscount(), new PromotionDiscount(), new CouponDiscount() };
+            var calcResult = calculator.CalculateDiscountResults(order, discounts);
+            Assert.Null(calcResult);
+        }
+
+        [Fact]
+        public void CalculateDiscountResults_NullDiscounts_Success()
+        {
+            var order = new Order(new Customer("Dimitris Pappas", "Athens")) { CatalogPrice = 1200 };
+            IEnumerable<IDiscount> discounts = null;
+            var calculator = new OrderDiscountCalculator();            
+            var calcResult = calculator.CalculateDiscountResults(order, discounts);
+            Assert.Null(calcResult);
+        }
+
+        [Fact]
         public void CalculateDiscountResults_Success()
         {
             var order = new Order(new Customer("Dimitris Pappas", "Athens")) { CatalogPrice = 1200 };
@@ -46,6 +66,16 @@ namespace AssignmentTests
             Assert.Contains(calcResult, c => c.DiscountValue == 10);
 
         }
+
+        [Fact]
+        public void GetApplicableDiscounts_Null_Success()
+        {
+            Order order = null;
+            var calculator = new OrderDiscountCalculator();
+            var discounts = calculator.GetApplicableDiscounts(order);
+            Assert.Null(discounts);
+        }
+
 
         [Fact]
         public void GetApplicableDiscounts_CatalogPrice_Success()

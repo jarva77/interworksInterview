@@ -22,6 +22,9 @@ namespace ERP
 
         internal IEnumerable<DiscountResult>? CalculateDiscountResults(Order order, IEnumerable<IDiscount>? discounts)
         {
+            if (order == null)
+                return null;
+
             return discounts?.Select(c => c.Apply(order)).OrderBy(c => c.SortOrder).ToList();
         }
 
