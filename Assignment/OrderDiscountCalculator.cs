@@ -1,5 +1,5 @@
-﻿using DiscountSubSystem;
-using ERP;
+﻿
+using ERP.Domain;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("AssignmentTests")]

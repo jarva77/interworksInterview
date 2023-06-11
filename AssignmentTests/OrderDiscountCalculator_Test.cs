@@ -1,5 +1,5 @@
-﻿using DiscountSubSystem;
-using ERP;
+﻿using ERP;
+using ERP.Domain;
 using Xunit;
 
 namespace AssignmentTests

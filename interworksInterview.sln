@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment", "Assignment\Assignment.csproj", "{51941611-A343-474F-9E49-EBBDEC46F94A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment", "Assignment\Assignment.csproj", "{51941611-A343-474F-9E49-EBBDEC46F94A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentTests", "AssignmentTests\AssignmentTests.csproj", "{87980C2B-47FA-4E71-BC88-2711266CE894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssignmentTests", "AssignmentTests\AssignmentTests.csproj", "{87980C2B-47FA-4E71-BC88-2711266CE894}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

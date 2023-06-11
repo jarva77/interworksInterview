@@ -1,6 +1,6 @@
-﻿namespace ERP
+﻿namespace ERP.Domain
 {
-    public partial class Customer
+    public partial class Customer : BaseEntity<int>
     {
         public Customer(string name, string address)
         {

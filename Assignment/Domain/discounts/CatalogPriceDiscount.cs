@@ -1,8 +1,7 @@
-﻿using ERP;
-
-namespace DiscountSubSystem
+﻿
+namespace ERP.Domain
 {
-    public class CatalogPriceDiscount : IDiscount
+    public class CatalogPriceDiscount : BaseEntity<int>, IDiscount
     {
         public string Name { get => "Price List"; }
         public int SortOrder { get => 10; }

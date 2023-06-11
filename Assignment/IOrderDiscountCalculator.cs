@@ -1,4 +1,6 @@
-﻿using DiscountSubSystem;
+﻿
+
+using ERP.Domain;
 
 namespace ERP
 {

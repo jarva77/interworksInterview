@@ -1,8 +1,7 @@
-﻿using DiscountSubSystem;
-
-namespace ERP
+﻿
+namespace ERP.Domain
 {
-    public partial class Order
+    public partial class Order : BaseEntity<int>
     {
         public Order(Customer customer) => Customer = customer;
         public Customer Customer { get; set; }

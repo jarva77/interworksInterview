@@ -1,6 +1,5 @@
-﻿using ERP;
-
-namespace DiscountSubSystem
+﻿
+namespace ERP.Domain
 {
     public interface IDiscount
     {

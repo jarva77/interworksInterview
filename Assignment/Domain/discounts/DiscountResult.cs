@@ -1,6 +1,6 @@
-﻿namespace DiscountSubSystem
+﻿namespace ERP.Domain
 {
-    public class DiscountResult
+    public class DiscountResult : BaseEntity<int>
     {
         public DiscountResult(string name, decimal discountValue, int sortOrder)
         {

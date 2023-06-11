@@ -1,4 +1,4 @@
-﻿namespace DiscountSubSystem
+﻿namespace ERP.Domain
 {
     public enum DiscountType
     {
