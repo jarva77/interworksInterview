@@ -2,10 +2,9 @@
 using ERP;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo( "AssignmentTests")]
+[assembly: InternalsVisibleTo("AssignmentTests")]
 namespace ERP
 {
-
     public class OrderDiscountCalculator : IOrderDiscountCalculator
     {
         internal IEnumerable<IDiscount>? GetApplicableDiscounts(Order order)
